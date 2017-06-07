@@ -19,7 +19,7 @@ filterCommonGenes <- function(input.f,
     id <- match.arg(id)
      
     ## Read input data
-    if (inherits(input.fm "data.frame") == FALSE) {
+    if (inherits(input.f, "data.frame") == FALSE) {
       input.df <- read.table(input.f,
                              header=TRUE,
                              row.names=1,
